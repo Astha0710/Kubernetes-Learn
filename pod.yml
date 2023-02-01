@@ -1,0 +1,14 @@
+# Simple Kubernetes Pod to deploy the app.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  labels:
+    app: web 
+spec:
+containers:
+  - name: web-ctr
+    image: astha0710/kubetest
+    ports:
+      - containerPort: 8080

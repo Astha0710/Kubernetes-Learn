@@ -1,13 +1,14 @@
-# Simple Kubernetes Pod to deploy the app contained in nigelpoulton/getting-started-k8s:1.0
+# Simple Kubernetes Pod to deploy the app c
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hello-pod
+  name: asv-pod
   labels:
     app: web
 spec:
   containers:
-    - name: web-ctr
-      image: nigelpoulton/getting-started-k8s:1.0
+    - name: web-ctr2
+      image: astha0710/kubetest
       ports:
-        - containerPort: 8080
+      - containerPort: 8080
+
